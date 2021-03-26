@@ -37,7 +37,7 @@ print(value)
 print("Attempting to connect to occupancy database")
 
 # insert the value into the table
-conn = sqlite3.connect('data.db')
+conn = sqlite3.connect('/home/pi/Python/NickOccupancy/data.db')
 conn.execute("INSERT INTO OCCUPANCY (DATETIME, OCCUPANCY) \
 		VALUES (?, ?)",
 		(date, value))
